@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+:root {
+  --primary-nutmeg: hsl(14, 45%, 36%);
+  --primary-dark-raspberry: hsl(332, 51%, 32%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-rose-white: hsl(330, 100%, 98%);
+  --neutral-eggshell: hsl(30, 54%, 90%);
+  --neutral-light-grey: hsl(30, 18%, 87%);
+  --neutral-wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+
+  --title-font-family: 'Young Serif', serif;
+  --text-font-family: 'Outfit', san-serif;
+}
+
+body {
+  background-color: var(--neutral-light-grey);
+  color: var(--neutral-wenge-brown);
+  font-family: var(--text-font-family);
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--title-font-family);
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style-position: inside;
+  line-height: 200%;
+}
+
+li::marker {
+  color: var(--primary-nutmeg);
+}
+
+.container {
+  background-color: var(--neutral-white);
+}
+
+.banner {
+  width: 100%;
+}
+
+.wrap {
+  padding: 0 30px;
+}
+
+.title1 {
+  color: var(--dark-charcoal);
+}
+
+.title2 {
+  color: var(--primary-nutmeg);
+}
+
+.preparation-time {
+  background-color: var(--neutral-rose-white);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.preparation-time > h2 {
+  color: var(--primary-dark-raspberry);
+  font-family: var(--text-font-family);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.preparation-time > ul {
+  margin-bottom: 0;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+.nutrition-table td {
+  padding: 15px;
+  border-bottom: 1px solid;
+}
+
+.nutrition-table tr:last-child td {
+  border: 0 none;
+}
+
+.nutrition-table tr > td:last-child {
+  color: var(--primary-nutmeg);
+  font-weight: 600;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 425px) {
+  body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+  }
+
+  .container {
+    border-radius: 15px;
+    padding: 30px;
+    width: 375px;
+  }
+
+  .banner {
+    border-radius: 10px;
+  }
+
+  .wrap {
+    padding: 0;
+  }
+}
